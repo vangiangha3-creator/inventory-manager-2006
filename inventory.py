@@ -23,3 +23,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def add_product():
+    name = input("Tên sản phẩm: ")
+    price = int(input("Giá bán: "))
+    quantity = int(input("Số lượng tồn kho: "))
+
+    product = {
+        "name": name,
+        "price": price,
+        "qty": quantity
+    }
+
+    products.append(product)
+    print(">> Đã nhập hàng thành công.")
